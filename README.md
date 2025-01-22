@@ -9,6 +9,158 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <style>
+    /* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000; /* Black background */
+  color: #000000; /* White text */
+}
+
+/* Transparent Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.5) !important;
+  transition: background 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.9);
+  border: none;
+}
+
+.dropdown-item {
+  color: #fff !important;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Home Section */
+.home-section {
+  height: 100vh;
+  background: url('./photos/Rozzis\ -\ Picture\ gallery\ 5.jpg') no-repeat center center/cover;
+  display: flex;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ffcc00, 0 0 30px #ffcc00, 0 0 40px #ffcc00; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Menu Sections */
+.menu-section {
+  padding: 60px 0;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #1e1e1e; /* Dark card background */
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #ffd900; /* White text for cards */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1); /* Light shadow for contrast */
+}
+/* About Us Section */
+.about-section {
+  padding: 60px 0;
+  justify-content: center;
+
+  background: #000000; /* Light background */
+  text-align: center;
+  color: #7c0505;
+
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Us Section */
+.contact-section {
+  padding: 60px 0;
+  background: hsl(0, 0%, 0%); /* White background */
+  text-align: center;
+  color: #7c0505;
+  justify-content: center;
+
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-link {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #333; /* Dark text */
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ffe600; /* Green on hover */
+}
+.
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+  }
+}
+  </style>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
